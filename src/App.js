@@ -3,6 +3,7 @@ import CharacterCard from './CharacterCard';
 import './App.css';
 import _ from 'lodash';
 import pika from './pikachu.png';
+import hidden from './hiddenpika.jpg';
  
 let message = 'Hello'
  
@@ -38,6 +39,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>What is it name?</h1>
+        <img src={hidden}></img><br></br>
         {
           Array.from(this.state.chars).map((item, index) => (
             <CharacterCard
@@ -62,6 +64,7 @@ class App extends React.Component {
         <div>Attemp {this.state.attempt}</div>
         {this.state.completed && <h4>Complete</h4>}
         {this.state.completed && <img src={pika}></img>}
+        {this.state.completed && <h4>I'm pikachu</h4>}
       </div>
     )
   }
