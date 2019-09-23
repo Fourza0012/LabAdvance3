@@ -5,7 +5,7 @@ import _ from 'lodash';
 import pika from './pikachu.png';
 import hidden from './hiddenpika.jpg';
  
-let message = 'Hello'
+let message = 'pikachu'
  
 const prepareStateFromWord = (given_word) => {
   let word = given_word.toUpperCase()
