@@ -2,6 +2,7 @@ import React from 'react';
 import CharacterCard from './CharacterCard';
 import './App.css';
 import _ from 'lodash';
+import pika from './pikachu.png';
  
 let message = 'Hello'
  
@@ -58,9 +59,8 @@ class App extends React.Component {
           ))
         }
         <div>Attemp {this.state.attempt}</div>
-        {
-          this.state.completed && <h4>Complete</h4>
-        }
+        {this.state.completed && <h4>Complete</h4>}
+        {this.state.completed && <img src={pika}></img>}
       </div>
     )
   }
