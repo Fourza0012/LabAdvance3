@@ -37,6 +37,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>What is it name?</h1>
         {
           Array.from(this.state.chars).map((item, index) => (
             <CharacterCard
